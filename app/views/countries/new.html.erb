@@ -1,0 +1,43 @@
+<%= form_for @country,  :html => {:class => "form-horizontal center"} do |f| %>
+
+<div class="form-group">
+  <%= f.label :name , class: "col-md-4 control-label" %><br>
+  <div class="col-md-8">
+    <%= f.text_field :name %>
+  </div>
+</div>
+
+<div class="form-group">
+  <%= f.label :region , class: "col-md-4 control-label" %>
+  <div class="col-md-8">
+    <%= f.text_area :region %>
+  </div>
+</div>
+
+<div class="form-group">
+  <%= f.label :dish , class: "col-md-4 control-label" %>
+  <div class="col-md-8">
+    <%= f.text_area :dish %>
+  </div>
+</div>
+
+<div class="form-group">
+  <%= f.label :flavor , class: "col-md-4 control-label" %>
+  <div class="col-md-8">
+    <%= f.text_area :flavor %>
+  </div>
+</div>
+
+<div class="form-group">
+  <%= f.label :ingredients, class: "col-md-4 control-label" %>
+  <div class="col-md-8">
+    <%= f.text_area :ingredients %>
+  </div>
+</div>
+
+<div class="form-group">
+  <%= f.submit "Submit", class: "btn btn-default btn-primary" %>
+  <div class="col-md-8">
+  </div>
+</div>
+<% end %>
